@@ -1,22 +1,244 @@
+/* ── Publication header ── */
 body {
+  font-size: 18px;
+}
+
+.site-header {
+  border-top: 4px solid #443737;
+  border-bottom: 1px solid #4e1111;
+  padding: 14px 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+
+.publication-name {
   font-family: Georgia, serif;
-  font-size: 17px;
-  line-height: 1.75;
-  padding: 28px;
-  max-width: 620px;
-  margin: 0 auto;
-  color: #111;
-  background: #fffdf8;
+  font-size: 1.3em;
+  font-weight: bold;
+  margin: 2px;
+  letter-spacing: -0.01em;
+}
+
+.section-label {
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #453662;
+  margin: 2px;
+}
+
+/* ── Article layout ── */
+article {
+  max-width: 700px;
+  margin: 2px auto;
+  padding: 0 24px 60px;
+  text-align: center;
+}
+
+/* ── Article header ── */
+.article-header {
+  padding: 36px 0 0;
+  border-bottom: 1px solid #472b2b;
+  margin: 2px ;
+  text-align: center;
 }
 
 h1 {
-  font-size: 2em;
-  line-height: 1.15;
-  margin: 0 0 8px;
+  font-size: 2.6em;
+  font-weight: 700;
+  line-height: 1.1;
+  margin: 2px;
+  letter-spacing: -0.025em;
+  text-align: center;
+}
+
+.deck {
+  font-size: 1.3em;
+  line-height: 1.5;
+  color: #444;
+  margin: 2px;
+  font-style: italic;
+  text-align: center;
+}
+
+.byline {
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 0.05em;
+  color: #888;
+  margin: 0 0 20px;
+  text-align: center;
+}
+
+/* ── Hero image ── */
+.hero {
+  margin: 0 auto 28px;
+  text-align: center;
+}
+
+.hero img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.hero figcaption {
+  font-size: 1em;
+  color: #777;
+  line-height: 1.5;
+  padding: 8px 24px 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.credit {
+  display: block;
+  color: #aaa;
+  margin-top: 2px;
+}
+
+/* ── Body text ── */
+section {
+  margin: 0 auto 28px;
+  text-align: center;
+}
+
+figure {
+  margin: 0 auto 28px;
+  text-align: center;
+}
+
+figure img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+p {
+  margin: 0 0 22px;
+  text-align: center;
+}
+
+.lead {
+  font-size: 1.25em;
+  font-weight: 600;
+  line-height: 1.7;
 }
 
 h2 {
-  font-size: 1.2em;
-  margin: 24px 0 6px;
-  color: #444;
+  font-size: 1.45em;
+  font-weight: 700;
+  margin: 36px 0 10px;
+  padding-top: 28px;
+  border-top: 1px solid #e0e0e0;
+  letter-spacing: -0.01em;
+}
+
+a {
+  color: #111;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+a:hover {
+  color: #000;
+}
+
+/* ── Pull quote ── */
+.pull-quote {
+  border-top: 2px solid #111;
+  border-bottom: 2px solid #111;
+  margin: 32px 0;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.pull-quote p {
+  font-size: 1.5em;
+  line-height: 1.4;
+  font-style: italic;
+  margin: 0 0 12px;
+  letter-spacing: -0.01em;
+}
+
+.pull-quote footer {
+  font-size: 1.02em;
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 0.05em;
+  color: #666;
+}
+
+/* ── Fact box ── */
+.fact-box {
+  background: #f7f5ef;
+  border-left: 3px solid #111;
+  padding: 16px 20px;
+  margin: 28px 0;
+}
+
+.fact-box-title {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #555;
+  margin: 0 0 10px;
+}
+
+.fact-box ul {
+  margin: 0;
+  padding-left: 18px;
+  font-size: 1.12em;
+  line-height: 1.65;
+}
+
+.fact-box li { margin-bottom: 5px; }
+
+/* ── Embeds ── */
+figure {
+  margin: 24px 0;
+}
+
+figure iframe {
+  display: block;
+}
+
+figcaption {
+  font-size: 1em;
+  color: #888;
+  margin-top: 6px;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+}
+
+/* ── Article footer ── */
+.article-footer {
+  border-top: 1px solid #e0e0e0;
+  margin-top: 40px;
+  padding-top: 18px;
+  font-size: 0.83em;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #888;
+}
+
+.tags a {
+  color: #555;
+  text-decoration: none;
+}
+
+.tags a:hover { text-decoration: underline; }
+
+.corrections { margin-top: 8px; color: #bbb; }
+
+/* ── Page footer ── */
+.page-footer {
+  text-align: center;
+  border-top: 1px solid #e0e0e0;
+  padding: 28px 24px;
+  font-size: 13px;
+  color: #bbb;
+  font-family: Arial, Helvetica, sans-serif;
 }

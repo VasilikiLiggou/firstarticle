@@ -1,6 +1,11 @@
 /* ── Publication header ── */
 body {
   font-size: 18px;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  min-height: 100vh;
+  margin: 0;
+  padding: 20px 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .site-header {
@@ -11,6 +16,8 @@ body {
   justify-content: center;
   align-items: center;
   gap: 16px;
+  background-color: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 .publication-name {
@@ -33,9 +40,12 @@ body {
 /* ── Article layout ── */
 article {
   max-width: 700px;
-  margin: 2px auto;
-  padding: 0 24px 60px;
+  margin: 30px auto;
+  padding: 40px 24px 60px;
   text-align: center;
+  background-color: rgba(255, 255, 255, 0.98);
+  border-radius: 10px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
 }
 
 /* ── Article header ── */
@@ -99,6 +109,44 @@ h1 {
   margin-top: 2px;
 }
 
+/* ── Data Table ── */
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 24px 0;
+  font-size: 16px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.data-table thead {
+  background: linear-gradient(135deg, #443737 0%, #5a4d4d 100%);
+  color: white;
+}
+
+.data-table th {
+  padding: 14px 16px;
+  text-align: left;
+  font-weight: 700;
+  border-bottom: 2px solid #443737;
+}
+
+.data-table td {
+  padding: 14px 16px;
+  border-bottom: 1px solid #e8e8e8;
+}
+
+.data-table tbody tr:hover {
+  background-color: #f0f4f8;
+  transition: background-color 0.2s ease;
+}
+
+.data-table tbody tr:nth-child(even) {
+  background-color: #f8fafb;
+}
+
 /* ── Body text ── */
 section {
   margin: 0 auto 28px;
@@ -130,10 +178,11 @@ p {
 h2 {
   font-size: 1.45em;
   font-weight: 700;
-  margin: 36px 0 10px;
-  padding-top: 28px;
-  border-top: 1px solid #e0e0e0;
+  margin: 36px 0 20px;
+  padding: 20px 0 10px 0;
+  border-bottom: 3px solid #443737;
   letter-spacing: -0.01em;
+  color: #2c3e50;
 }
 
 a {
@@ -216,29 +265,38 @@ figcaption {
 
 /* ── Article footer ── */
 .article-footer {
-  border-top: 1px solid #e0e0e0;
+  border-top: 2px solid #e0e0e0;
   margin-top: 40px;
-  padding-top: 18px;
+  padding-top: 24px;
   font-size: 0.83em;
   font-family: Arial, Helvetica, sans-serif;
-  color: #888;
+  color: #666;
 }
 
 .tags a {
-  color: #555;
+  color: #443737;
   text-decoration: none;
+  font-weight: 600;
 }
 
-.tags a:hover { text-decoration: underline; }
+.tags a:hover { 
+  text-decoration: underline;
+  color: #5a4d4d;
+}
 
-.corrections { margin-top: 8px; color: #bbb; }
+.corrections { 
+  margin-top: 12px; 
+  color: #999; 
+}
 
 /* ── Page footer ── */
 .page-footer {
   text-align: center;
-  border-top: 1px solid #e0e0e0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
   padding: 28px 24px;
   font-size: 13px;
-  color: #bbb;
+  color: #666;
   font-family: Arial, Helvetica, sans-serif;
+  background-color: rgba(255, 255, 255, 0.7);
+  margin-top: 30px;
 }
